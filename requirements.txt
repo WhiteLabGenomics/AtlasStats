@@ -5,3 +5,7 @@ pytest-cov==4.0.0
 fastapi==0.104.1
 uvicorn==0.24.0
 httpx==0.25.1
+cellxgene_census==1.7.0
+pyarrow==15.0.0
+session_info==1.0.0
+tiledbsoma==1.4.4
