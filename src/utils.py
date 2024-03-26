@@ -16,8 +16,8 @@ def combine_parquet(input_files: list, output_file: str) -> None:
     -------
     None
     """
-    # Check if the input files are a list
-    if not isinstance(input_files, list):
+    # Check if the input_files argument is a non-empty list
+    if not isinstance(input_files, list) or len(input_files) < 1:
         raise TypeError("Input files should be a list of file paths.")
     # Check if the output file is not empty
     if len(output_file) < 1:
